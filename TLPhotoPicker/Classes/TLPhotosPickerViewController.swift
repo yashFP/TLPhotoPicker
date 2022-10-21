@@ -590,6 +590,10 @@ extension TLPhotosPickerViewController {
             self.focusedCollection = collection
             self.updateTitle()
             self.reloadCollectionView()
+        }else{
+            if self.photoLibrary.limitMode {
+                updatePresentLimitedLibraryButton()
+            }
         }
     }
 }

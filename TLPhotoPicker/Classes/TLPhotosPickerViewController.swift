@@ -669,7 +669,7 @@ extension TLPhotosPickerViewController: UIImagePickerControllerDelegate, UINavig
         
         // if user is on ipad using split view controller, present picker as popover
         if UIDevice.current.userInterfaceIdiom == .pad {
-            picker.modalPresentationStyle = .popover
+            picker.modalPresentationStyle = .fullScreen
             picker.popoverPresentationController?.sourceView = view
             picker.popoverPresentationController?.sourceRect = .zero
         }
